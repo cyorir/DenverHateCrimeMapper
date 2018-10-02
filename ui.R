@@ -8,6 +8,9 @@
 #
 
 library(shiny)
+library(leaflet)
+library(rgdal)
+library(dplyr)
 
 data <- read.csv("BiasMotivatedCrimes.csv")
 bias_types <- levels(data$Bias.Type)
